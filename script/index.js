@@ -13,3 +13,14 @@ var app2 = new Vue({
         meddage: "You loaded this page on " + new Date().toLocaleString()
     }
 })
+
+var app4 = new Vue({
+    el: '#app-4',
+    data: {
+        todos:[
+            {text:"learn javascript"},
+            {text:"Learn Vue"},
+            {text:"Build something awesome"}
+        ]
+    }
+}
