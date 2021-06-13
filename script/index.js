@@ -12,7 +12,7 @@ var app2 = new Vue({
     data: {
         message: "You loaded this page on " + new Date().toLocaleString()
     }
-})
+});
 
 var app4 = new Vue({
     el: '#app-4',
@@ -23,4 +23,16 @@ var app4 = new Vue({
             {text:"Build something awesome"}
         ]
     }
-}
+});
+
+var app5 = new Vue({
+    el: "#app-5",
+    data:{
+        message:"hello Vue.js!!"
+    },
+    method: {
+        reverseMessage: function(){
+            this.message = this.message.split('').reverse().join('')
+        }
+    }
+});
