@@ -30,7 +30,7 @@ var app5 = new Vue({
     data:{
         message:"hello Vue.js!!"
     },
-    method: {
+    methods: {
         rMessage: function(){
             this.message = this.message.split('').reverse().join('')
         }
